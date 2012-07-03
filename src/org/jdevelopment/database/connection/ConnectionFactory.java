@@ -1,4 +1,4 @@
-package org.database.connection;
+package org.jdevelopment.database.connection;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -13,7 +13,8 @@ public class ConnectionFactory {
 	private static MSAccessConnection accessInstance;
 
 	public static Connection getConnection(DatabaseType dbType,
-			DatabaseConfigurations configs) throws SQLException, ClassNotFoundException {
+			DatabaseConfigurations configs) throws SQLException,
+			ClassNotFoundException {
 
 		switch (dbType) {
 		case Oracle:
@@ -65,15 +66,15 @@ public class ConnectionFactory {
 			}
 
 			return postgreeSQLInstance.getConnection(configs);
-			
+
 		case MSAccess:
-			
-			if(accessInstance == null){
-				
+
+			if (accessInstance == null) {
+
 				accessInstance = new MSAccessConnection();
-				
+
 			}
-			
+
 			return accessInstance.getConnection(configs);
 
 		default:
@@ -81,6 +82,13 @@ public class ConnectionFactory {
 			return null;
 
 		}
+
+	}
+
+	public static Connection getConnection(DatabaseConfigurations configs)
+			throws SQLException, ClassNotFoundException {
+
+		return getConnection(configs.getDbType(), configs);
 
 	}
 

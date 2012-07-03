@@ -1,4 +1,4 @@
-package org.database.connection;
+package org.jdevelopment.database.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

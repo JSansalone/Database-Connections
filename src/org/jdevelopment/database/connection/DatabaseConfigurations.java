@@ -1,4 +1,4 @@
-package org.database.connection;
+package org.jdevelopment.database.connection;
 
 public final class DatabaseConfigurations {
 
