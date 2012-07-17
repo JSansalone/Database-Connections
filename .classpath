@@ -2,5 +2,13 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="C:/Java/Libraries/mysql-connector-java-5.1.18/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Java/Libraries/jtds-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Java/Libraries/firebirdsql-full.jar"/>
+	<classpathentry kind="lib" path="C:/Java/Libraries/jaybird-2.2.0/jaybird-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Java/Libraries/jaybird-2.2.0/jaybird-full-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Java/Libraries/postgresql-9.1-901.jdbc4.jar"/>
+	<classpathentry kind="lib" path="C:/Java/Libraries/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Java/Libraries/DBF_JDBC40.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
